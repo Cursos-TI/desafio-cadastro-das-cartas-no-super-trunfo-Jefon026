@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int main() {
+    //pop=população; pts= Pontos Turísticos
     // Carta 1
     int POP, PTS;
     char NOME[50], COD[5], ESTADO[5];
