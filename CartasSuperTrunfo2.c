@@ -31,6 +31,29 @@ int main(){
     
     //Começo da segunda carta abaixo!!
 
+    printf("Agora vamos colocar as informações sobre a segunda carta!! \n ");
+
+      printf("Insira o nome do estado: \n");
+    scanf("%s", estado);
+
+    printf("Insira o código da cidade: \n");
+    scanf("%s", cod);
+
+    printf("Insira o nome da cidade: \n");
+    scanf("%s", nome);
+
+    printf("Insira a área da total da cidade em KM²: \n");
+    scanf("%lf", &area);
+
+    printf("Insira o PIB da cidade: \n");
+    scanf("%lf", &pib);
+
+    printf("Insira a quantidade de pontos turísticos: \n");
+    scanf("%d", &pts);
+
+    printf("Insira o numero total de habitantes: \n");
+    scanf("%d", &pop);
+
     printf("Carta1: \n");
     printf("Estado: %s \n", ESTADO);
     printf("Código: %s \n", COD);
@@ -39,6 +62,15 @@ int main(){
     printf("Produto Interno Bruto: %.2f \n",PIB);
     printf("Pontos Turísticos: %d \n", PTS);
     printf("População total: %d \n", POP);
+
+    printf("Carta2: \n");
+    printf("Estado: %s \n", estado);
+    printf("Código: %s \n", cod);
+    printf("Nome da Cidade: %s \n",nome);
+    printf("Área Total: %.2f \n",area);
+    printf("Produto Interno Bruto: %.2f \n",pib);
+    printf("Pontos Turísticos: %d \n", pts);
+    printf("População total: %d \n", pop);
 
 
 }
