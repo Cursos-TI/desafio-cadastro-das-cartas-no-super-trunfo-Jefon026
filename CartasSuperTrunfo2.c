@@ -2,46 +2,43 @@
 
 int main(){
 
-    int pop1, pts1, pop2, pts2;
-    float area1,area2,pib1,pib2;
-    char nome1[50],codigo1[4],estado1[2],nome2[50],codigo2[4],estado2[2];
-
+    int POP, pop, PTS, pts;
+    char NOME[50],COD[5],ESTADO[5],nome[50],cod[5],estado[5];
+    double AREA, area, PIB,pib;
 
     printf("olá! vamos preeencher os dados das cartas uma por vez. Para começar coloque os dados referentes á PRIMEIRA carta. \n");
 
     printf("Insira o nome do estado: \n");
-    scanf("%s", estado1);
+    scanf("%s", ESTADO);
 
     printf("Insira o código da cidade: \n");
-    scanf("%s", codigo1);
+    scanf("%s", COD);
 
     printf("Insira o nome da cidade: \n");
-    scanf("%s", nome1);
+    scanf("%s", NOME);
 
     printf("Insira a área da total da cidade em KM²: \n");
-    scanf("%f", &area1);
+    scanf("%lf", &AREA);
 
     printf("Insira o PIB da cidade: \n");
-    scanf("%f", &pib1);
+    scanf("%lf", &PIB);
 
     printf("Insira a quantidade de pontos turísticos: \n");
-    scanf("%d", &pts1);
+    scanf("%d", &PTS);
 
     printf("Insira o numero total de habitantes: \n");
-    scanf("%d", &pop1);
+    scanf("%d", &POP);
     
     //Começo da segunda carta abaixo!!
 
     printf("Carta1: \n");
-    printf("Estado: %s\n", estado1);
-    printf("Código: %s\n", codigo1);
-    printf("Nome da Cidade: %s\n",nome1);
-    printf("Área Total: %f\n",&area1);
-    printf("Produto Interno Bruto: %f\n",&pib1);
-    printf("Pontos Turísticos: %d\n",&pts1);
-    printf("População total: %d\n",&pop1);
-
-    return 0;
+    printf("Estado: %s \n", ESTADO);
+    printf("Código: %s \n", COD);
+    printf("Nome da Cidade: %s \n",NOME);
+    printf("Área Total: %.2f \n",AREA);
+    printf("Produto Interno Bruto: %.2f \n",PIB);
+    printf("Pontos Turísticos: %d \n", PTS);
+    printf("População total: %d \n", POP);
 
 
 }
