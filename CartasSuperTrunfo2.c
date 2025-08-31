@@ -5,12 +5,12 @@ int main() {
     // Carta 1
     int POP, PTS;
     char NOME[50], COD[5], ESTADO[5];
-    double AREA, PIB;
+    float AREA, PIB;
 
     // Carta 2
     int pop, pts;
     char nome[50], cod[5], estado[5];
-    double area, pib;
+    float area, pib;
 
     printf("Olá! Vamos preencher os dados das cartas uma por vez.\n");
     printf("Para começar coloque os dados referentes à PRIMEIRA carta.\n\n");
@@ -26,10 +26,10 @@ int main() {
     scanf("%s", NOME);
 
     printf("Insira a área total da cidade em KM²: ");
-    scanf("%lf", &AREA);
+    scanf("%f", &AREA);
 
     printf("Insira o PIB da cidade: ");
-    scanf("%lf", &PIB);
+    scanf("%f", &PIB);
 
     printf("Insira a quantidade de pontos turísticos: ");
     scanf("%d", &PTS);
@@ -50,10 +50,10 @@ int main() {
     scanf("%s", nome);
 
     printf("Insira a área total da cidade em KM²: ");
-    scanf("%lf", &area);
+    scanf("%f", &area);
 
     printf("Insira o PIB da cidade: ");
-    scanf("%lf", &pib);
+    scanf("%f", &pib);
 
     printf("Insira a quantidade de pontos turísticos: ");
     scanf("%d", &pts);
@@ -61,13 +61,15 @@ int main() {
     printf("Insira o número total de habitantes: ");
     scanf("%d", &pop);
 
+
+
     // --- Exibir resultados ---
     printf("\n===== CARTA 1 =====\n");
     printf("Estado: %s\n", ESTADO);
     printf("Código: %s\n", COD);
     printf("Nome da Cidade: %s\n", NOME);
-    printf("Área Total: %.2lf km²\n", AREA);
-    printf("PIB: %.2lf \n", PIB);
+    printf("Área Total: %.2f km²\n", AREA);
+    printf("PIB: %.2f \n", PIB);
     printf("Pontos Turísticos: %d\n", PTS);
     printf("População: %d habitantes\n", POP);
 
@@ -75,8 +77,8 @@ int main() {
     printf("Estado: %s\n", estado);
     printf("Código: %s\n", cod);
     printf("Nome da Cidade: %s\n", nome);
-    printf("Área Total: %.2lf km²\n", area);
-    printf("PIB: %.2lf \n", pib);
+    printf("Área Total: %.2f km²\n", area);
+    printf("PIB: %.2f \n", pib);
     printf("Pontos Turísticos: %d\n", pts);
     printf("População: %d habitantes\n", pop);
 
