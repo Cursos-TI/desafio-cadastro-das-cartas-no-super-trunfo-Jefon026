@@ -69,13 +69,15 @@ int main() {
     printf("Insira o número total de habitantes: ");
     scanf("%lu", &pop2);
 
-    // Cálculos para densidade populacional e PIB per capita
+    // Cálculos para densidade populacional e PIB per capita.
 
     dp1 = pop1 / area1;
     ppc1 = pib1 / pop1;
 
     dp2 = pop2 / area2;
     ppc2 = pib2 / pop2;
+
+    //cálculos do super poder.
 
     double superpoder1, superpoder2;
 
@@ -107,7 +109,7 @@ int main() {
     printf("PIB per Capita: %.2lf reais\n", ppc2);
     printf("Super Poder: %.2f\n", superpoder2);
 
-    // Definição de resultados 
+    // Mostrar os vencedores em cada atributo.
 
     int resultadopop = pop1 > pop2;
     int resultadopts = pts1 > pts2;
