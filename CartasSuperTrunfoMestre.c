@@ -89,7 +89,7 @@ int main() {
     printf("PIB: %.2lf \n", pib1);
     printf("Pontos Turísticos: %d\n", pts1);
     printf("População: %d habitantes\n", pop1);
-    printf("Densidade Populacional: %.2lf hab/km²\n", dp1);
+    printf("Densidade Populacional: %.5lf hab/km²\n", dp1);
     printf("PIB per Capita: %.2lf reais\n", ppc1);
     printf("Super Poder: %.2f\n", superpoder1);
 
@@ -101,7 +101,7 @@ int main() {
     printf("PIB: %.2lf \n", pib2);
     printf("Pontos Turísticos: %d\n", pts2);
     printf("População: %d habitantes\n", pop2);
-    printf("Densidade Populacional: %.2lf hab/km²\n", dp2);
+    printf("Densidade Populacional: %.5lf hab/km²\n", dp2);
     printf("PIB per Capita: %.2lf reais\n", ppc2);
     printf("Super Poder: %.2f\n", superpoder2);
 
