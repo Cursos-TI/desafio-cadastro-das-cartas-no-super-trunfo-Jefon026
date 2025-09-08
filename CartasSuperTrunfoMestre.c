@@ -9,12 +9,14 @@ int main() {
     //ppc= PIB Per Capta
 
     // Carta 1
-    int pop1, pts1;
+    unsigned long int pop1;
+    int pts1;
     char nome1[50], cod1[5], estado1[5];
     double area1, pib1, dp1, ppc1;
 
     // Carta 2
-    int pop2, pts2;
+    unsigned long int pop2;
+    int pts2;
     char nome2[50], cod2[5], estado2[5];
     double area2, pib2, dp2, ppc2;
 
@@ -41,7 +43,7 @@ int main() {
     scanf("%d", &pts1);
 
     printf("Insira o número total de habitantes: ");
-    scanf("%d", &pop1);
+    scanf("%lu", &pop1);
 
     // --- Carta 2 ---
     printf("\nAgora vamos colocar as informações sobre a SEGUNDA carta!\n\n");
@@ -65,7 +67,7 @@ int main() {
     scanf("%d", &pts2);
 
     printf("Insira o número total de habitantes: ");
-    scanf("%d", &pop2);
+    scanf("%lu", &pop2);
 
     // Cálculos para densidade populacional e PIB per capita
 
@@ -88,7 +90,7 @@ int main() {
     printf("Área Total: %.2lf km²\n", area1);
     printf("PIB: %.2lf \n", pib1);
     printf("Pontos Turísticos: %d\n", pts1);
-    printf("População: %d habitantes\n", pop1);
+    printf("População: %lu habitantes\n", pop1);
     printf("Densidade Populacional: %.5lf hab/km²\n", dp1);
     printf("PIB per Capita: %.2lf reais\n", ppc1);
     printf("Super Poder: %.2f\n", superpoder1);
@@ -100,7 +102,7 @@ int main() {
     printf("Área Total: %.2lf km²\n", area2);
     printf("PIB: %.2lf \n", pib2);
     printf("Pontos Turísticos: %d\n", pts2);
-    printf("População: %d habitantes\n", pop2);
+    printf("População: %lu habitantes\n", pop2);
     printf("Densidade Populacional: %.5lf hab/km²\n", dp2);
     printf("PIB per Capita: %.2lf reais\n", ppc2);
     printf("Super Poder: %.2f\n", superpoder2);
@@ -110,7 +112,7 @@ int main() {
     int resultadopop = pop1 > pop2;
     int resultadopts = pts1 > pts2;
     int resultadopib = pib1 > pib2;
-    int resultadodp = dp1 > dp2;     // maior densidade vence
+    int resultadodp = dp1 < dp2;
     int resultadoppc = ppc1 > ppc2;
     int resultadoarea = area1 > area2;
     int resultadopoder = superpoder1 > superpoder2;
